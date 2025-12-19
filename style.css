@@ -1,0 +1,67 @@
+.hero_Sect {
+    padding-top: 50px;
+    
+    /* Ensure this variable matches the final color of your base gradient: #ffb6d9 */
+    --original-fade-color: #ffb6d9; 
+    
+    border-radius: 30px 30px 0 0;
+    
+    background: 
+        /* 1. Fading Mask: The pattern is now fully visible up to 50% and 
+           starts the fade to the solid color later (at 65%). */
+        linear-gradient(to bottom , 
+            transparent 0%, 
+            transparent 20%,     /* Pattern is fully visible above this line */
+            var(--original-fade-color) 65%, /* Pattern starts fading here */
+            var(--original-fade-color) 100%
+        ), 
+        
+        /* 2. Pink Pattern Layer: Ensure this SVG has a light pink fill. */
+        url('./assests/topography/topography.svg'),
+        
+        /* 3. Original Background: The base three-color gradient. */
+        linear-gradient(to bottom, #fa6da7, #f875aa, #ffb6d9);
+    
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: 100% 100%, auto, 100% 100%;
+}
+.profile{
+    
+    background: linear-gradient(to bottom,#f1c2c2,#fdeded,#f4f2f2);
+    border-radius: 30px 30px 0 0;
+}
+.skills
+{
+ 
+
+       
+     /* Ensure this variable matches the final color of your base gradient: #ffb6d9 */
+    --original-fade-color: #ebf5ed; 
+
+    border-radius: 30px 30px 0 0;
+
+    background: 
+        /* 1. Fading Mask: The pattern is now fully visible up to 50% and 
+           starts the fade to the solid color later (at 65%). */
+        linear-gradient(to right , 
+            rgba(235, 245, 237, 0.3) 0%,  /* faint fade at top */
+            var(--original-fade-color) 65%, /* Pattern starts fading here */
+            var(--original-fade-color) 100%
+        ), 
+        
+        /* 2. Pink Pattern Layer: Ensure this SVG has a light pink fill. */
+        url('./assests/floating-cogs/floating-cogs.svg'),
+        
+        /* 3. Original Background: The base three-color gradient. */
+        linear-gradient(to bottom,#a7f8b5,#cef9d5,#ebf5ed);
+    
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-size: 100% 100%, auto, 100% 100%;
+
+}
+.hobbies
+{
+    background: linear-gradient(to bottom, #73c3f5,#aedefc,#c1e1f5);
+    
+    border-radius: 30px 30px 0 0;
+}
